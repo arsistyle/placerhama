@@ -1,0 +1,17 @@
+.mapa{
+  padding-top: 100px;
+  &__contenedor{
+    height: 500px;
+    @include break(md-mw){
+      height: 350px;
+    }
+  }
+  &__titulo{
+    .sushi &{
+      color: $negro;
+    }
+    .placer &{
+      color: $blanco;
+    }
+  }
+}

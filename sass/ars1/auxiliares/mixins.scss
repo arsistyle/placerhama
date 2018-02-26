@@ -1,0 +1,20 @@
+@mixin estado-btn($bg, $bc){
+	background: $bg;
+	border-color: $bc;
+}
+
+@mixin box-shadow($shadow){
+	box-shadow: $shadow;
+}
+
+@mixin transicion($el:all, $tipo:ease, $tiempo:200ms){
+	transition: $el $tipo $tiempo;
+}
+
+@mixin posicion($p, $t, $r, $b, $l){
+	position: $p;
+	top: $t;
+	right: $r;
+	bottom: $b;
+	left: $l;
+}

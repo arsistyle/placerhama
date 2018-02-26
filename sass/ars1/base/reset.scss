@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 10px sans-serif;
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+fieldset, img, abbr, acronym {
+  border: 0;
+}
+
+address, caption, pre, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul, dl {
+  list-style: none;
+}
+
+caption {
+  text-align: left;
+}
+
+img {
+  border: 0;
+}

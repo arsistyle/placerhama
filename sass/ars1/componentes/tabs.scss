@@ -1,0 +1,122 @@
+@if $tabs==true {
+	.tabs {
+		$t: tabs;
+		margin-bottom: 40px;
+		&__nav {
+			display: flex;
+			justify-content: space-between;
+			background: $grisE;
+			box-shadow: 0 6px 12px rgba($negro, .1), 0 2px 6px rgba($negro, .1);
+			position: relative;
+			.contenido-dinamico &{
+				font-size: 1em;
+				margin: 0;
+			}
+			.no-flexbox &{
+				display: table;
+				width: 100%;
+			}
+		}
+		&__item {
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			font-size: 1.8em;
+			flex: 1;
+			&:focus {
+				outline: 0;
+			}
+			.contenido-dinamico &{
+				padding: 0;
+				&:before{
+					display: none;
+				}
+			}
+			.no-flexbox &{
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+		&__link {
+			padding: 20px 10px;
+			text-decoration: none;
+			display: block;
+			width: 100%;
+			color: $primario;
+			background: transparent;
+			box-shadow: 0 0 0 0 rgba($primario, 0);
+			@include transicion;
+			.contenido-dinamico &{
+				&:after{
+					display: none;
+					height: 0;
+					width: 0;
+				}
+			}
+		}
+		&__item {
+			&.ui-state-active {
+				.#{$t}__link {
+					color: $blanco;
+					background: $primario;
+					box-shadow: 0 0 0 5px rgba($primario, 1), 0 11px 12px rgba($primario, .3);
+					border-radius: 6px;
+				}
+			}
+		}
+		&__contenido {
+			padding: 30px;
+			background: $grisF8;
+			@media (max-width: 991px) {
+				background: transparent;
+			}
+		}
+		.ui-accordion-header {
+			font-family: $font-general;
+			font-weight: 400;
+			display: block;
+			font-size: 2em;
+			padding: 20px;
+			background: $grisF8;
+			cursor: pointer;
+			margin-bottom: 1px;
+			color: $primario;
+			@include transicion();
+			transition-delay: 200ms;
+			box-shadow: 0 0 0 rgba($primario, 0);
+			border-radius: 6px;
+			&:focus {
+				outline: 0;
+			}
+			.ui-icon {
+				float: right;
+				font-size: 18px;
+				@include transicion();
+				&:before {
+					vertical-align: middle;
+				}
+				&.fln-mas {
+					transform: rotate(90deg);
+				}
+				&.fln-menos {
+					transform: rotate(0);
+				}
+			}
+			&.ui-state-active {
+				background: $primario;
+				color: $blanco;
+				box-shadow: 0 6px 12px rgba($primario, .3);
+			}
+		}
+		.ie-8 & {
+			&__nav {
+				display: table;
+				width: 100%;
+			}
+			&__item {
+				display: table-cell;
+				vertical-align: top;
+			}
+		}
+	}
+}

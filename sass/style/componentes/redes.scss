@@ -1,0 +1,24 @@
+.redes{
+  &__link {
+    text-decoration: none;
+    margin: 0 10px;
+    @include transicion;
+    transform-origin: center;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      transform: rotate(30deg);
+    }
+    .sushi & {
+      svg {
+        fill: $negro;
+      }
+    }
+    .placer & {
+      svg {
+        fill: $blanco;
+      }
+    }
+  }
+}

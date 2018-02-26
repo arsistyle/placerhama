@@ -1,0 +1,794 @@
+@charset "UTF-8";
+/*! ¡ATENCIÓN! No modificar en ningun caso, hoja de estilos compilada con SASS. */
+.contenido {
+  position: relative;
+  padding: 100px 0 0;
+  min-height: 50vh;
+  background-size: 800px;
+  background-attachment: fixed;
+}
+
+.sushi .contenido {
+  background-image: url(../img/sushi/pattern.jpg);
+}
+
+.placer .contenido {
+  background-image: url(../img/placer/pattern.jpg);
+}
+
+@media (max-width: 767px) {
+  .contenido {
+    background-size: 400px;
+  }
+}
+
+.contenido__titulo {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 4em;
+  position: relative;
+}
+
+.sushi .contenido__titulo {
+  color: #333;
+}
+
+.placer .contenido__titulo {
+  color: #fff;
+}
+
+.contenido__titulo:after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 10vw;
+  margin: 10px auto 0;
+}
+
+.sushi .contenido__titulo:after {
+  background: #333;
+}
+
+.placer .contenido__titulo:after {
+  background: #fff;
+}
+
+@media (max-width: 767px) {
+  .contenido__titulo {
+    font-size: 2.5em;
+  }
+}
+
+.sushi .contenido__subtitulo {
+  color: #333;
+}
+
+.placer .contenido__subtitulo {
+  color: #fff;
+}
+
+.wrap {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.aviso {
+  font-size: 1.6em;
+  padding: 20px;
+  border: 4px solid;
+}
+
+.aviso__parrafo {
+  margin-bottom: 30px;
+  opacity: .8;
+}
+
+.aviso__mark {
+  display: inline-block;
+  padding: 10px;
+}
+
+.sushi .aviso {
+  border-color: #333;
+  color: #333;
+}
+
+.sushi .aviso__mark {
+  background: #f44336;
+  color: #fff;
+}
+
+.placer .aviso {
+  border-color: #fff;
+  color: #fff;
+}
+
+.placer .aviso__mark {
+  background: #ffeb3b;
+  color: #333;
+}
+
+.redes__link {
+  text-decoration: none;
+  margin: 0 10px;
+  -webkit-transition: all ease 200ms;
+  -o-transition: all ease 200ms;
+  transition: all ease 200ms;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.redes__link:last-child {
+  margin-right: 0;
+}
+
+.redes__link:hover {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.sushi .redes__link svg {
+  fill: #333;
+}
+
+.placer .redes__link svg {
+  fill: #fff;
+}
+
+.accordeon {
+  margin-bottom: 30px;
+}
+
+.accordeon__header {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.accordeon__header span {
+  width: calc(100% - 40px);
+}
+
+.accordeon__header:first-child {
+  margin-top: 0;
+}
+
+.accordeon__header svg {
+  -webkit-transition: all ease 200ms;
+  -o-transition: all ease 200ms;
+  transition: all ease 200ms;
+  stroke-width: 2px;
+}
+
+.accordeon__header svg line {
+  -webkit-transition: all ease 200ms;
+  -o-transition: all ease 200ms;
+  transition: all ease 200ms;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.sushi .accordeon__header {
+  background: #333;
+  color: #fff;
+}
+
+.sushi .accordeon__header svg {
+  stroke: #fff;
+}
+
+.placer .accordeon__header {
+  background: #fff;
+  color: #333;
+}
+
+.placer .accordeon__header svg {
+  stroke: #333;
+}
+
+.sushi .accordeon__header.active {
+  background: #f44336;
+}
+
+.placer .accordeon__header.active {
+  background: #ffeb3b;
+  color: #333;
+}
+
+.placer .accordeon__header.active svg {
+  stroke: #333;
+}
+
+.accordeon__header.active line:first-child {
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+@media (max-width: 767px) {
+  .accordeon__header {
+    font-size: 2em;
+  }
+}
+
+.accordeon__body {
+  display: none;
+  padding: 30px;
+}
+
+.sushi .accordeon__body {
+  border: 5px solid #333;
+}
+
+.placer .accordeon__body {
+  border: 5px solid #fff;
+}
+
+.sushi .accordeon__body.active {
+  border-color: #f44336;
+}
+
+.placer .accordeon__body.active {
+  border-color: #ffeb3b;
+}
+
+@media (max-width: 767px) {
+  .accordeon__body {
+    padding: 10px;
+  }
+}
+
+.mapa {
+  padding-top: 100px;
+}
+
+.mapa__contenedor {
+  height: 500px;
+}
+
+@media (max-width: 767px) {
+  .mapa__contenedor {
+    height: 350px;
+  }
+}
+
+.sushi .mapa__titulo {
+  color: #333;
+}
+
+.placer .mapa__titulo {
+  color: #fff;
+}
+
+.horarios {
+  padding: 10px;
+}
+
+.sushi .horarios {
+  background: #333;
+  color: #fff;
+}
+
+.placer .horarios {
+  background: #fff;
+  color: #333;
+}
+
+.horarios__titulo {
+  padding: 5px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-right: 30px;
+}
+
+.sushi .horarios__titulo {
+  background: #f44336;
+  color: #fff;
+}
+
+.placer .horarios__titulo {
+  background: #ffeb3b;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  .horarios__titulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.horarios__item {
+  font-size: 1.6em;
+  margin-right: 10px;
+}
+
+.horarios__item__dias {
+  font-weight: 600;
+}
+
+.sushi .horarios__item__dias {
+  color: #f44336;
+}
+
+.placer .horarios__item__dias {
+  color: #fdd835;
+}
+
+.inicio__item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100vh;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.inicio__item--sushi .inicio__bg {
+  background-image: url(/img/sushi/bg.jpg);
+}
+
+.inicio__item--sushi .inicio__bg:after {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.inicio__item--sushi .inicio__titulo {
+  color: #333;
+}
+
+.inicio__item--sushi .inicio__titulo:after, .inicio__item--sushi .inicio__titulo:before {
+  background-color: #f44336;
+}
+
+.inicio__item--sushi:hover .inicio__bg:after {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.inicio__item--placer .inicio__bg {
+  background-image: url(/img/placer/bg.jpg);
+}
+
+.inicio__item--placer .inicio__bg:after {
+  background: rgba(51, 51, 51, 0.7);
+}
+
+.inicio__item--placer .inicio__titulo {
+  color: #fff;
+}
+
+.inicio__item--placer .inicio__titulo:after, .inicio__item--placer .inicio__titulo:before {
+  background-color: #ffeb3b;
+}
+
+.inicio__item--placer:hover .inicio__bg:after {
+  background-color: rgba(51, 51, 51, 0.95);
+}
+
+.inicio__item:hover .inicio__bg {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 767px) {
+  .inicio__item {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .inicio__item {
+    height: 80vh;
+  }
+}
+
+.inicio__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  background-size: cover;
+  -webkit-transition: all ease 3s;
+  -o-transition: all ease 3s;
+  transition: all ease 3s;
+}
+
+.inicio__bg:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all ease 3s;
+  -o-transition: all ease 3s;
+  transition: all ease 3s;
+}
+
+.inicio__titulo {
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 1;
+  font-size: 5vw;
+}
+
+.inicio__titulo span {
+  display: block;
+  text-align: center;
+}
+
+.inicio__titulo:before, .inicio__titulo:after {
+  content: '';
+  -webkit-transition: all ease 3s;
+  -o-transition: all ease 3s;
+  transition: all ease 3s;
+  display: block;
+  width: 10vw;
+  height: 10px;
+  margin: 10px auto;
+}
+
+@media (max-width: 767px) {
+  .inicio__titulo {
+    font-size: 10vw;
+  }
+  .inicio__titulo:before, .inicio__titulo:after {
+    width: 20vw;
+    height: 5px;
+    margin: 5px auto;
+  }
+}
+
+.inicio__entrar {
+  position: absolute;
+  bottom: 3vh;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+.header {
+  height: 70vh;
+  position: relative;
+  padding: 30px;
+}
+
+.header__bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  background-size: cover;
+}
+
+.header__bg__layer {
+  width: 100%;
+  height: 100vh;
+}
+
+.sushi .header__bg {
+  background: url(../img/sushi/bg.jpg) center center no-repeat;
+}
+
+.sushi .header__bg__layer {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.placer .header__bg {
+  background: url(../img/placer/bg.jpg) center center no-repeat;
+}
+
+.placer .header__bg__layer {
+  background: rgba(51, 51, 51, 0.7);
+}
+
+.header__btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 30px;
+}
+
+@media (max-width: 767px) {
+  .header__btns {
+    padding: 15px;
+  }
+}
+
+.header__back {
+  width: 50px;
+  -webkit-transition: all ease 200ms;
+  -o-transition: all ease 200ms;
+  transition: all ease 200ms;
+}
+
+.header__back svg {
+  width: 100%;
+  fill: transparent;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sushi .header__back svg {
+  stroke: #333;
+}
+
+.placer .header__back svg {
+  stroke: #fff;
+}
+
+.header__back:hover {
+  -webkit-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  transform: translateX(-5px);
+}
+
+@media (max-width: 767px) {
+  .header__back {
+    width: 40px;
+  }
+}
+
+.header__titulo {
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 1;
+  font-size: 5vw;
+}
+
+.sushi .header__titulo {
+  color: #333;
+}
+
+.placer .header__titulo {
+  color: #fff;
+}
+
+.header__titulo:before, .header__titulo:after {
+  content: '';
+  -webkit-transition: all ease 3s;
+  -o-transition: all ease 3s;
+  transition: all ease 3s;
+  display: block;
+  width: 10vw;
+  height: 10px;
+  margin: 10px auto;
+}
+
+.sushi .header__titulo:before, .sushi .header__titulo:after {
+  background-color: #f44336;
+}
+
+.placer .header__titulo:before, .placer .header__titulo:after {
+  background-color: #ffeb3b;
+}
+
+@media (max-width: 767px) {
+  .header__titulo {
+    font-size: 10vw;
+  }
+  .header__titulo:before, .header__titulo:after {
+    width: 20vw;
+    height: 5px;
+    margin: 5px auto;
+  }
+}
+
+.header__contacto {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.header__contacto__item {
+  font-size: 4em;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+
+.header__contacto__item:first-child {
+  margin-right: 50px;
+}
+
+@media (max-width: 767px) {
+  .header__contacto__item:first-child {
+    margin-right: 0;
+  }
+}
+
+.header__contacto__item svg {
+  margin-right: 10px;
+}
+
+.sushi .header__contacto__item {
+  color: #333;
+}
+
+.sushi .header__contacto__item svg {
+  fill: #333;
+}
+
+.placer .header__contacto__item {
+  color: #fff;
+}
+
+.placer .header__contacto__item svg {
+  fill: #fff;
+}
+
+@media (max-width: 767px) {
+  .header__contacto__item {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .header__contacto__item svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.carta__imagen {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.carta__descripcion {
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.placer .carta__descripcion {
+  color: #333;
+  background: #fff;
+}
+
+.carta__descripcion--top {
+  margin-top: -40px;
+}
+
+.carta__item {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.sushi .carta__item {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+.placer .carta__item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.carta__item:last-child {
+  border: 0;
+  margin-bottom: 0;
+}
+
+.carta__info {
+  margin-right: 30px;
+}
+
+.carta__nombre {
+  font-size: 2em;
+  margin-bottom: 1px;
+}
+
+.sushi .carta__nombre {
+  color: #333;
+}
+
+.placer .carta__nombre {
+  color: #fff;
+}
+
+.sushi .carta__desc, .sushi .carta__dato {
+  color: #666;
+}
+
+.placer .carta__desc, .placer .carta__dato {
+  color: #aaa;
+}
+
+.carta__dato {
+  margin-bottom: 40px;
+}
+
+.carta__valor {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.sushi .carta__valor {
+  color: #333;
+}
+
+.placer .carta__valor {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .carta__valor {
+    font-size: 2.5em;
+    text-align: right;
+  }
+}
+
+.footer {
+  position: relative;
+  background-size: 800px;
+  padding: 30px 0;
+  background-attachment: fixed;
+}
+
+.sushi .footer {
+  background-image: url(../img/sushi/pattern.jpg);
+}
+
+.placer .footer {
+  background-image: url(../img/placer/pattern.jpg);
+}
+
+@media (max-width: 767px) {
+  .footer {
+    background-size: 400px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.footer__social {
+  margin-bottom: 30px;
+}
+
+.footer__copy {
+  font-size: 1.4em;
+}
+
+.sushi .footer__copy {
+  color: #333;
+}
+
+.placer .footer__copy {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

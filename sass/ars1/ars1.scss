@@ -1,0 +1,40 @@
+/*! ¡ATENCIÓN! No modificar en ningun caso, hoja de estilos compilada con SASS. */
+
+@import 'configuracion';
+@import 'debug';
+
+// Auxiliares
+@import 'auxiliares/functions';
+@import 'auxiliares/colores';
+@import 'auxiliares/variables';
+@import 'auxiliares/mediaqueries';
+@import 'auxiliares/mixins';
+
+// Externos
+@import 'externos/normalize';
+@import 'externos/magnific-popup';
+@import 'externos/prism';
+@import 'externos/owl';
+
+// Estructura
+@import 'estructura/columnas';
+
+// Base
+@import 'base/reset';
+@import 'base/general';
+@import 'base/textos';
+@import 'base/utilidades';
+@import 'base/animaciones';
+
+// Componentes
+@import 'componentes/botones';
+@import 'componentes/forms';
+@import 'componentes/tablas';
+@import 'componentes/alertas';
+@import 'componentes/tooltip';
+@import 'componentes/desplegables';
+@import 'componentes/tabs';
+@import 'componentes/lightboxs';
+@import 'componentes/acciones';
+@import 'componentes/alerta-navegador';
+

@@ -1,0 +1,207 @@
+@if $utilidades==true {
+  // Alineaciones de elementos flexbox
+  .start-xs {
+    justify-content: flex-start;
+  }
+  .center-xs {
+    justify-content: center;
+  }
+  .end-xs {
+    justify-content: flex-end;
+  }
+  .top-xs {
+    align-items: flex-start;
+  }
+  .middle-xs {
+    align-items: center;
+  }
+  .bottom-xs {
+    align-items: flex-end;
+  }
+  .around-xs {
+    justify-content: space-around;
+  }
+  .between-xs {
+    justify-content: space-between;
+  }
+  .first-xs {
+    order: -1;
+  }
+  .last-xs {
+    order: 1;
+  }
+  .row-xs {
+    flex-direction: row;
+  }
+  .row-reverse-xs {
+    flex-direction: row-reverse;
+  }
+  .column-xs {
+    flex-direction: column;
+  }
+  .column-reverse-xs {
+    flex-direction: column-reverse;
+  }
+  .wrap-xs {
+    flex-wrap: wrap;
+  }
+  .nowrap-xs {
+    flex-wrap: nowrap;
+  }
+  @each $slug,
+  $w in $cols {
+    @media (min-width: #{$w}+px) {
+      .start-#{$slug} {
+        justify-content: flex-start;
+      }
+      .center-#{$slug} {
+        justify-content: center;
+      }
+      .end-#{$slug} {
+        justify-content: flex-end;
+      }
+      .top-#{$slug} {
+        align-items: flex-start;
+      }
+      .middle-#{$slug} {
+        align-items: center;
+      }
+      .bottom-#{$slug} {
+        align-items: flex-end;
+      }
+      .around-#{$slug} {
+        justify-content: space-around;
+      }
+      .between-#{$slug} {
+        justify-content: space-between;
+      }
+      .first-#{$slug} {
+        order: -1;
+      }
+      .last-#{$slug} {
+        order: 1;
+      }
+      .row-#{$slug} {
+        flex-direction: row;
+      }
+      .row-reverse-#{$slug} {
+        flex-direction: row-reverse;
+      }
+      .column-#{$slug} {
+        flex-direction: column;
+      }
+      .column-reverse-#{$slug} {
+        flex-direction: column-reverse;
+      }
+      .wrap-#{$slug} {
+        flex-wrap: wrap;
+      }
+      .nowrap-#{$slug} {
+        flex-wrap: nowrap;
+      }
+    }
+  } // Alineación elementos interiores de columnas
+  $alineacion-h: right,
+  left,
+  center;
+  $alineacion-v: top,
+  bottom,
+  middle;
+  @each $d in $alineacion-h {
+    @for $i from 1 through 1 {
+      .xs-text-#{$d} {
+        text-align: $d;
+      }
+    }
+  }
+  @each $d in $alineacion-v {
+    @for $i from 1 through 1 {
+      .xs-text-#{$d} {
+        vertical-align: $d;
+      }
+    }
+  }
+  @each $slug,
+  $w in $cols {
+    @media (min-width: #{$w}+px) {
+      @each $dd in $alineacion-v {
+        @for $i from 1 through 1 {
+          .#{$slug}-text-#{$dd} {
+            vertical-align: $dd;
+          }
+        }
+      }
+      @each $dd in $alineacion-h {
+        @for $i from 1 through 1 {
+          .#{$slug}-text-#{$dd} {
+            text-align: $dd;
+          }
+        }
+      }
+    }
+  } // Orientación de flexbox
+  .xs-right-auto {
+    margin-right: auto;
+  }
+  .xs-left-auto {
+    margin-left: auto;
+  }
+  @each $slug,
+  $w in $cols {
+    @media (min-width: #{$w}+px) {
+      .#{$slug}-right-auto {
+        margin-right: auto;
+      }
+      .#{$slug}-left-auto {
+        margin-left: auto;
+      }
+    }
+  } // Ocultar/Mostrar
+  .oculto-xs {
+    display: none !important;
+  }
+  .block-xs {
+    display: block !important;
+  }
+  .inline-block-xs {
+    display: inline-block !important;
+  }
+  .inline-xs {
+    display: inline !important;
+  }
+  .flex-xs {
+    display: flex !important;
+  }
+  .inline-flex-xs {
+    display: inline-flex !important;
+  }
+  .table-xs {
+    display: table !important;
+  }
+  @each $slug,
+  $w in $cols {
+    @media (min-width: #{$w}+px) {
+      .oculto-#{$slug} {
+        display: none !important;
+      }
+      .block-#{$slug} {
+        display: block !important;
+      }
+      .inline-block-#{$slug} {
+        display: inline-block !important;
+      }
+      .inline-#{$slug} {
+        display: inline !important;
+      }
+      .flex-#{$slug} {
+        display: flex !important;
+      }
+      .inline-flex-#{$slug} {
+        display: inline-flex !important;
+      }
+      .table-#{$slug} {
+        display: table !important;
+      }
+    }
+  }
+}

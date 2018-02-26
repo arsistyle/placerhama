@@ -1,0 +1,19 @@
+/*! ¡ATENCIÓN! No modificar en ningun caso, hoja de estilos compilada con SASS. */
+
+@import '../ars1/auxiliares/functions.scss';
+@import '../ars1/auxiliares/colores.scss';
+@import '../ars1/auxiliares/variables.scss';
+@import '../ars1/auxiliares/mediaqueries.scss';
+@import '../ars1/auxiliares/mixins.scss';
+
+@import 'base/general';
+
+@import 'componentes/redes';
+@import 'componentes/accordeon';
+@import 'componentes/mapa';
+@import 'componentes/horarios';
+
+@import 'estructura/inicio';
+@import 'estructura/header';
+@import 'estructura/carta';
+@import 'estructura/footer';

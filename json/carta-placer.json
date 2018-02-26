@@ -1,0 +1,257 @@
+{
+  "1": {
+    "titulo": "Hamburguesas",
+    "descripcion": "Hamburguesas 100% carne (200 grs.) todas acompañadas de papas rotas.",
+    "platos": {
+      "1": {
+        "id": 1,
+        "titulo": "Texana",
+        "descripcion": "Hamburguesa de vacuno, aros de cebolla apanados, bbq, pepinillos, tocino crocante, lechuga hidropónica, mostaza dijon.",
+        "valor": "$5.000"
+      },
+      "2": {
+        "id": 2,
+        "titulo": "Cheddar",
+        "descripcion": "Hamburguesa de vacuno, queso cheddar, tocino crocante, cebolla morada, bbq.",
+        "valor": "$5.000"
+      },
+      "3": {
+        "id": 3,
+        "titulo": "La chora",
+        "descripcion": "Hamburguesa mezcla de vacuno y chorizo parrillero, cebolla frita, queso mantecoso, mayonesa casera, lechuga hidropónica.",
+        "valor": "$5.200"
+      },
+      "4": {
+        "id": 4,
+        "titulo": "Blue cheese",
+        "descripcion": "Hamburguesa de vacuno, mermelada de cebolla morada, champiñones salteados, tocino crocante, salsa de queso azul.",
+        "valor": "$5.800"
+      },
+      "5": {
+        "id": 5,
+        "titulo": "Americana",
+        "descripcion": "Hamburguesa de vacuno, jamón acaramelado, queso mantecoso, huevo frito, cebolla frita, lechuga hidropónica, tocino crocante, pepinillos, mayonesa casera.",
+        "valor": "$5.600"
+      },
+      "6": {
+        "id": 6,
+        "titulo": "Shrimp",
+        "descripcion": "Hamburguesa de vacuno, camarones apanados en panco, tomates al olivo, cebolla morada, lechuga hidropónica, sour cream, mostaza dulce.",
+        "valor": "$6.000"
+      },
+      "7": {
+        "id": 7,
+        "titulo": "Italiana",
+        "descripcion": "Hamburguesa de vacuno, tomate, palta, lechuga hidropónica, mayonesa casera.",
+        "valor": "$4.800"
+      },
+      "8": {
+        "id": 8,
+        "titulo": "La gula",
+        "descripcion": "Hamburguesa de vacuno 300g, queso cheddar, queso mantecoso, queso mozzarella, cebolla frita.",
+        "valor": "$6.500"
+      },
+      "9": {
+        "id": 9,
+        "titulo": "Salmón blue cheese",
+        "descripcion": "Hamburguesa de salmón, champiñones salteados, cebolla morada, tocino crocante, salsa de queso azul.",
+        "valor": "$5.800"
+      },
+      "10": {
+        "id": 10,
+        "titulo": "Salmón shrimp",
+        "descripcion": "Hamburguesa de salmón, camarones apanados, pepinillos, mermelada de cebolla morada, lechuga hidropónica, queso mantecoso.",
+        "valor": "$6.500"
+      },
+      "11": {
+        "id": 11,
+        "titulo": "Salmón fresh",
+        "descripcion": "Hamburguesa de salmón, cebolla morada, tomate, pepinillos, palta, lechuga hidropónica, mayonesa casera.",
+        "valor": "$5.000"
+      },
+      "12": {
+        "id": 12,
+        "titulo": "Soya o lentejas mediterránea",
+        "descripcion": "Hamburguesa de soya o lentejas, mermelada de cebolla morada, pepinillos, champiñones salteados, lechuga hidropónica, mostaza dijon, mayonesa casera.",
+        "valor": "$4.000"
+      },
+      "13": {
+        "id": 13,
+        "titulo": "Soya o lentejas italiana",
+        "descripcion": "Hamburguesa de soya o lentejas, tomate, palta, lechuga, mayonesa casera.",
+        "valor": "$3.500"
+      }
+    }
+  },
+  "2": {
+    "titulo": "Sanguches premium",
+    "descripcion": "Todos en pan ciabatta acompañados de papas rotas.",
+    "platos": {
+      "1": {
+        "id": 14,
+        "titulo": "Lomo saltado",
+        "descripcion": "Lomo liso de vacuno, cebolla morada, tomate, cilantro, todo saltado al wok con sabrosos aliños peruanos, lechuga, mayonesa casera.",
+        "valor": "$6.200"
+      },
+      "2": {
+        "id": 15,
+        "titulo": "Chivito",
+        "descripcion": "Lomo de cerdo cocinado al horno y luego a la cacerola con vegetales y especies, por 3 horas a fuego lento, jamón acaramelado, tocino, huevo frito, tomate, lechuga, mayonesa, queso mantecoso.",
+        "valor": "$6.000"
+      },
+      "3": {
+        "id": 16,
+        "titulo": "Criollo",
+        "descripcion": "Exquisita y jugosa plateada cocinada al horno por 3 horas, luego a la olla por 3 horas a fuego lento, palta, tomate, lechuga, mayonesa casera.",
+        "valor": "$6.000"
+      },
+      "4": {
+        "id": 17,
+        "titulo": "Pal q sabe",
+        "descripcion": "Exquisita prieta artesanal reventada con cebolla caramelizada, queso de cabra fundido, pebre, lechuga, tomates al olivo, mayonesa casera.",
+        "valor": "$5.800"
+      },
+      "5": {
+        "id": 18,
+        "titulo": "El de pollito",
+        "descripcion": "Sabrosos y jugosos trutros de pollo al horno adobado con chimichurri, tomate, palta, lechuga, papa frita hilo, mayonesa de huacatay.",
+        "valor": "$5.300"
+      },
+      "6": {
+        "id": 19,
+        "titulo": "Cochinito asaltado",
+        "descripcion": "Lomito de cerdo macerado en chimichurri a la mostaza antigua, pimientos, tomate, champiñones, cilantro, todo salteado al wok con un toque de vinagre, palta, ají verde, queso fundido, mayonesa de huacatay.",
+        "valor": "$6.400"
+      }
+    }
+  },
+  "3": {
+    "titulo": "Los clásicos de siempre",
+    "imagen": "/img/placer/tabla.svg"
+  },
+  "4": {
+    "titulo": "Baguette",
+    "platos": {
+      "1": {
+        "id": 20,
+        "titulo": "A lo pobre ½ metro",
+        "descripcion": "Lomo a lo pobre, cebolla tiernamente caramelizada, huevo frito, papas hilo, mayonesa casera.",
+        "valor": "$8.800"
+      },
+      "2": {
+        "id": 21,
+        "titulo": "Pollo a la costra de pesto",
+        "descripcion": "Suave pechuga de pollo en costra de pesto de albahaca y almendras, tomate, aceitunas amargas azapeñas, lechuga hidropónica, mayonesa de ajo.",
+        "valor": "$4.800"
+      },
+      "3": {
+        "id": 22,
+        "titulo": "Lomito en queso de cabra",
+        "descripcion": "Jugoso lomito de cerdo al horno y luego a la cacerola por 3 horas, queso de cabra fundido, pimentones asados, lechuga hidropónica, mayonesa de ajo.",
+        "valor": "$5.800"
+      },
+      "4": {
+        "id": 23,
+        "titulo": "Un ahumadito",
+        "descripcion": "Deliciosas láminas de salmón ahumado sobre lechuga hidropónica, palmitos, palta, aceitunas amargas, sour cream.",
+        "valor": "$4.800"
+      }
+    }
+  },
+  "5": {
+    "titulo": "Para el picoteo",
+    "platos": {
+      "1": {
+        "id": 24,
+        "titulo": "Alitas de pollo broaster",
+        "unidades": 6,
+        "valor": "$3.000"
+      },
+      "2": {
+        "id": 25,
+        "titulo": "Mozzarella sticks",
+        "unidades": 6,
+        "valor": "$3.200"
+      },
+      "3": {
+        "id": 26,
+        "titulo": "Aros de cebolla",
+        "unidades": 6,
+        "valor": "$1.500"
+      },
+      "4": {
+        "id": 27,
+        "titulo": "Papas rotas",
+        "descripcion": "Con salsa a elección entre: cheddar o salsa de queso azul.",
+        "valor": "$3.500"
+      },
+      "5": {
+        "id": 28,
+        "titulo": "Papas fritas clásicas A",
+        "descripcion": "500 grs.",
+        "valor": "$3.500"
+      },
+      "6": {
+        "id": 29,
+        "titulo": "Papas fritas clásicas B",
+        "descripcion": "300 grs.",
+        "valor": "$2.000"
+      }
+    }
+  },
+  "6": {
+    "titulo": "Promociones",
+    "platos": {
+      "1": {
+        "titulo": "Box culpable 1",
+        "descripcion": "Hamburguesa texana 180 gr o hamburguesa cheddar 180 gr + papas rotas + 3 alitas de pollo broaster o aros de cebolla + bebida de 250cc.",
+        "valor": "$6.000"
+      },
+      "2": {
+        "titulo": "Box culpable 2",
+        "descripcion": "Churrasco italiano o churrasco chacarero + papas clásicas + bebida de 250cc.",
+        "valor": "$5.000"
+      },
+      "3": {
+        "titulo": "Box culpable 3",
+        "descripcion": "Completo papas clásicas bebida de 250cc.",
+        "valor": "$2.200"
+      },
+      "4": {
+        "titulo": "Box culpable 4",
+        "descripcion": "Mechada italiana + alitas de pollo broaster bebida de 250cc.",
+        "valor": "$5.000"
+      },
+      "5": {
+        "titulo": "Box culpable 5",
+        "descripcion": "Sanguche de lomo saltado o sanguche criollo + 6 mozzarella sticks + bebida de 250cc.",
+        "valor": "$7.000"
+      }
+    }
+  },
+  "7": {
+    "titulo": "Salsas para acompañar",
+    "platos": {
+      "1": {
+        "titulo": "Salsa de olivo",
+        "valor": "$400"
+      },
+      "2": {
+        "titulo": "Alioli",
+        "valor": "$400"
+      },
+      "3": {
+        "titulo": "BBQ",
+        "valor": "$400"
+      },
+      "4": {
+        "titulo": "Extra mostaza HEINZ",
+        "valor": "$400"
+      },
+      "5": {
+        "titulo": "Extra ketchup HEINZ",
+        "valor": "$400"
+      }
+    }
+  }
+}

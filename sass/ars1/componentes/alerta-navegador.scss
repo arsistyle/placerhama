@@ -1,0 +1,17 @@
+.alerta-navegador{
+	@include posicion(fixed, null, 10%, 30px, 10%);
+	padding: 15px;
+	background: $blanco;
+	border: 1px solid $grisD;
+	z-index: 9999;
+	display: none;
+	&__titulo{
+		margin-bottom: .25em;
+	}
+	&__parrafo{
+		margin-bottom: 0
+	}
+	.no-flexbox &{
+		display: block;
+	}
+}

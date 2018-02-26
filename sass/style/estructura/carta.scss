@@ -1,0 +1,72 @@
+.carta {
+  &__imagen {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 40px;
+  }
+  &__descripcion{
+    margin-bottom: 50px;
+    padding: 10px;
+    .placer &{
+      color: $negro;
+      background: $blanco;
+    }
+    &--top{
+      margin-top: -40px;
+    }
+  }
+  &__item {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    .sushi & {
+      border-bottom: 1px solid rgba($negro,.3);
+    }
+
+    .placer & {
+      border-bottom: 1px solid rgba($blanco,.3);
+    }
+    &:last-child{
+      border: 0;
+      margin-bottom: 0;
+    }
+  }
+  &__info {
+    margin-right: 30px;
+  }
+  &__nombre {
+    font-size: 2em;
+    margin-bottom: 1px;
+    .sushi & {
+      color: $negro;
+    }
+    .placer & {
+      color: $blanco;
+    }
+  }
+  &__desc,
+  &__dato {
+    .sushi & {
+      color: $gris6;
+    }
+    .placer & {
+      color: $grisA;
+    }
+  }
+  &__dato{
+    margin-bottom: 40px;
+  }
+  &__valor {
+    font-size: 3em;
+    font-weight: 700;
+    .sushi & {
+      color: $negro;
+    }
+    .placer & {
+      color: $blanco;
+    }
+    @include break(md-mw){
+      font-size: 2.5em;
+      text-align: right;
+    }
+  }
+}

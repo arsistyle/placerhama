@@ -1,0 +1,87 @@
+.contenido {
+  position: relative;
+  padding: 100px 0 0;
+  min-height: 50vh;
+  background-size: 800px;
+  background-attachment: fixed;
+  .sushi & {
+    background-image: url(../img/sushi/pattern.jpg);
+  }
+  .placer & {
+    background-image: url(../img/placer/pattern.jpg);
+  }
+  @include break(md-mw) {
+    background-size: 400px;
+  }
+  &__titulo {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 4em;
+    position: relative;
+    .sushi & {
+      color: $negro;
+    }
+    .placer & {
+      color: $blanco;
+    }
+    &:after {
+      content: '';
+      display: block;
+      height: 5px;
+      width: 10vw;
+      margin: 10px auto 0;
+      .sushi & {
+        background: $negro;
+      }
+      .placer & {
+        background: $blanco;
+      }
+    }
+    @include break(md-mw) {
+      font-size: 2.5em;
+    }
+  }
+  &__subtitulo {
+    .sushi & {
+      color: $negro;
+    }
+    .placer & {
+      color: $blanco;
+    }
+  }
+}
+
+.wrap {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.aviso{
+  font-size: 1.6em;
+  padding: 20px;
+  border: 4px solid;
+  &__parrafo{
+    margin-bottom: 30px;
+    opacity: .8;
+  }
+  &__mark{
+    display: inline-block;
+    padding: 10px;
+  }
+  .sushi &{
+    border-color: $negro;
+    color: $negro;
+    &__mark{
+      background: getColor('red', '500');
+      color: $blanco;
+    }
+  }
+  .placer &{
+    border-color: $blanco;
+    color: $blanco;
+    &__mark {
+      background: getColor('yellow', '500');
+      color: $negro;
+    }
+  }
+}

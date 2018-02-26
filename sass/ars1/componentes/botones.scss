@@ -1,0 +1,293 @@
+@if $botones==true {
+	/* Botones */
+	%btn {
+		background: $default;
+		color: $blanco;
+		border: 1px solid $default;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1.6em;
+		font-weight: normal;
+		line-height: 1.5;
+		padding: 12px 30px;
+		text-align: center;
+		text-decoration: none;
+		@include transicion();
+		user-select: none;
+		vertical-align: middle;
+		white-space: nowrap;
+		border-radius: 6px;
+		text-transform: none;
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		&:disabled,
+		&.disabled {
+			cursor: not-allowed;
+			opacity: .5;
+			pointer-events: none;
+		}
+		&:after {
+			display: none;
+		}
+		&:focus {
+			outline: 0;
+		}
+		@media (max-width:543px) {
+			padding: 12px 20px;
+		}
+	}
+	$btns: primario $primario,
+	secundario $secundario,
+	terciario $terciario,
+	peligro $error,
+	exito $exito,
+	aviso $aviso,
+	info $info;
+	.btn {
+		$b: btn;
+		@extend %btn;
+		&:hover {
+			@include estado-btn(blanquear($default, 10%), blanquear($default, 10%));
+			box-shadow: 0 5px 10px rgba($default, .3);
+			.no-csstransforms & {
+				text-decoration: none;
+			}
+		}
+		&:active {
+			@include estado-btn(ennegrecer($default, 10%), ennegrecer($default, 10%));
+			box-shadow: 0 5px 10px rgba($default, .3);
+		}
+		&:disabled,
+		.disabled {
+			&:hover {
+				@include estado-btn($default, $default);
+				box-shadow: none;
+			}
+		}
+		&--negativo {
+			background: $blanco;
+			color: $default;
+			border-color: $blanco;
+			&:hover {
+				@include estado-btn(blanquear($default, 90%), null);
+				border-color: blanquear($default, 90%);
+			}
+			&:active {
+				@include estado-btn(blanquear($default, 70%), null);
+				border-color: blanquear($default, 50%);
+			}
+		}
+		&--fantasma {
+			@include estado-btn(transparent, $blanco);
+			box-shadow: none;
+			&:hover {
+				@include estado-btn(rgba($blanco, .1), null);
+				box-shadow: none;
+			}
+			&:active {
+				@include estado-btn(rgba($blanco, .15), null);
+				box-shadow: none;
+			}
+		} // Boton borde
+		&--borde {
+			@include estado-btn(transparent, null);
+			color: $default;
+			&:hover {
+				@include estado-btn(blanquear($default, 10%), null);
+				color: $blanco;
+			}
+			&:active {
+				@include estado-btn(ennegrecer($default, 10%), ennegrecer($default, 10%));
+				color: $blanco;
+				box-shadow: 0 2px 5px rgba($default, .3);
+			}
+		}
+		&--link {
+			color: $gris9;
+			background: transparent;
+			border-color: transparent;
+			&:hover {
+				background: rgba($gris3, .05);
+				border-color: transparent;
+				box-shadow: none;
+				.no-rgba & {
+					text-decoration: underline;
+					background: transparent;
+				}
+			}
+			&:active {
+				background: rgba($gris3, .1);
+				border-color: transparent;
+				box-shadow: none;
+			}
+		}
+		@each $btn,
+		$var in $btns {
+			&--#{$btn} {
+				@include estado-btn($var, $var);
+				box-shadow: 0 0 0 rgba($var, .5);
+				@if(luminance($var) > 0.5) {
+					color: $negro;
+				}
+				@else {
+					color: $blanco;
+				}
+				&:hover {
+					@include estado-btn(blanquear($var, 10%), blanquear($var, 10%));
+					box-shadow: 0 5px 10px rgba($var, .3);
+				}
+				&:active {
+					@include estado-btn(ennegrecer($var, 10%), ennegrecer($var, 10%));
+					box-shadow: 0 2px 5px rgba($var, .3);
+				}
+				&:disabled,
+				.disabled {
+					&:hover {
+						@include estado-btn($var, $var);
+						box-shadow: none;
+					}
+				}
+				&.btn--negativo {
+					background: $blanco;
+					color: $var;
+					border-color: $blanco;
+					&:hover {
+						@if(luminance($var) > 0.5) {
+							color: ennegrecer($var,30%);
+						} @else {
+							color: null;
+						}
+						@include estado-btn(blanquear($var, 90%), null);
+						border-color: blanquear($var, 90%);
+					}
+					&:active {
+						@include estado-btn(blanquear($var, 70%), null);
+						border-color: blanquear($var, 70%);
+					}
+				}
+				&.btn--borde {
+					color: $var;
+					@include estado-btn(transparent, null);
+					&:hover {
+						@if(luminance($var) > 0.5) {
+							color: $negro;
+						} @else {
+							color: $blanco;
+						}
+						background: blanquear($var, 10%);
+						@include estado-btn(blanquear($var, 10%), null);
+					}
+					&:active {
+						background: ennegrecer($var, 10%);
+						border-color: ennegrecer($var, 10%);
+						box-shadow: 0 2px 5px rgba($var, .3);
+					}
+				}
+				&.btn--link {
+					color: $var;
+					background: transparent;
+					border: transparent;
+					box-shadow: none;
+					&:hover {
+						background: rgba($var, .05);
+						box-shadow: none;
+						.no-rgba & {
+							text-decoration: underline;
+							background: transparent;
+						}
+					}
+					&:active {
+						background: rgba($var, .1);
+					}
+				}
+			}
+		} // Boton redondo
+		&--redondo {
+			border-radius: 30px;
+		} // Boton circulo
+		&--circulo {
+			width: 50px;
+			height: 50px;
+			max-width: 50px;
+			line-height: 50px;
+			border-radius: 50%;
+			text-align: center;
+			padding: 0;
+			vertical-align: middle;
+			&:before {
+				font-size: 20px;
+				vertical-align: middle;
+			}
+		} // Boton con icono
+		&--icono {
+			&:before {
+				margin-right: 5px;
+				font-size: 20px;
+				vertical-align: middle;
+			}
+		} // Boton block
+		&--block-xs {
+			width: 100%;
+		} // Boton ancho auto
+		&--inline-xs {
+			width: auto;
+		} // Boton big
+		&--big {
+			padding: 18px 36px;
+		} // Boton small
+		&--small {
+			padding: 5px 20px;
+			font-size: 1.4em;
+		} // Boton x-small
+		&--xsmall {
+			padding: 4px 15px;
+			font-size: 1.2em;
+		} // Boton ancho
+		&--ancho {
+			padding: 12px 50px;
+		}
+		.no-mediaqueries & {
+			&--block {
+				width: 100%;
+			}
+			&--inline {
+				width: auto;
+			}
+		}
+		&__grupo {
+			.btn {
+				margin-bottom: 1em;
+				margin-right: .5em;
+				&:last-child {
+					margin-right: 0;
+				}
+				@media (min-width:1200px) {
+					&--block-lg {
+						margin-right: 0;
+					}
+				}
+				@each $slug,
+				$tamanos in $medias {
+					@media #{$tamanos} {
+						&--block-#{$slug} {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	@each $slug,
+	$w,
+	$mw in $cols {
+		@media (min-width: #{$w}px) {
+			.btn--block-#{$slug} {
+				width: 100%;
+			}
+			.btn--inline-#{$slug} {
+				width: auto;
+			}
+		}
+	}
+}

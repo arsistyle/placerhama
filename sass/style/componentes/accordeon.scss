@@ -1,0 +1,84 @@
+.accordeon{
+  $a:&;
+  margin-bottom: 30px;
+  &__header{
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+      width: calc(100% - 40px);
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+    svg{
+      @include transicion;
+      stroke-width: 2px;
+      line{
+        @include transicion;
+        transform-origin: center;
+      }
+    }
+    .sushi &{
+      background: $negro;
+      color: $blanco;
+      svg{
+        stroke: $blanco;
+      }
+    }
+    .placer &{
+      background: $blanco;
+      color: $negro;
+      svg{
+        stroke: $negro;
+      }
+    }
+    &.active  {
+      .sushi &{
+        background: getColor('red', '500');
+      }
+      .placer &{
+        background: getColor('yellow', '500');
+        color: $negro;
+        svg{
+          stroke: $negro;
+        }
+      }
+      line:first-child {
+        transform: scaleY(0);
+      }
+    }
+    @include break(md-mw) {
+      font-size: 2em;
+    }
+  }
+  &__body{
+    display: none;
+    padding: 30px;
+    .sushi &{
+      border: 5px solid $negro;
+    }
+    .placer &{
+      border: 5px solid $blanco;
+    }
+    &.active {
+      .sushi & {
+        border-color: getColor('red', '500');
+      }
+      .placer & {
+        border-color: getColor('yellow', '500');
+      }
+    }
+    @include break(md-mw){
+      padding: 10px;
+    }
+  }
+}

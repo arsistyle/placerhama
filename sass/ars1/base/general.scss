@@ -1,0 +1,39 @@
+//** Configuración General **//
+*{
+	box-sizing: border-box;
+}
+
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: $font-general, sans-serif;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+.separation{
+	height: 30px;
+	&--ultra{
+		height: 160px;
+	}
+	&--big{
+		height: 60px;
+	}
+	&--small{
+		height: 15px;
+	}
+}
+
+.admin-content{
+	img{
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+}
+::selection{
+	color: $t-seleccion;
+	background: $bg-seleccion;
+}

@@ -1,0 +1,68 @@
+//-------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
+// Configuración de importación,
+// se debe poner true o false para cargar los archivos
+//-------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
+
+// Modo Debug
+
+$debug: false;
+
+// Font icons
+
+$font-icons: true;
+
+// Animaciones
+
+$animaciones: true;
+
+// Archivos Externos
+
+//-- Cargar Magnific popup
+$magnific-popup: false;
+
+//-- Cargar AnimateIt (Animaciones CSS3)
+$animate-it: true;
+
+//-- Cargar owl carousel
+$owl-carousel: false;
+
+//-- Cargar Prism (Para mostrar codigo en el front)
+$prism: true;
+
+
+// Archivos de componentes
+
+//-- Cargar botones
+$botones: true;
+
+//-- Cargar elementos de formularios
+$forms: true;
+
+//-- Cargar tablas
+$tablas: true;
+
+//-- Cargar alertas
+$alertas: true;
+
+//-- Cargar tooltips
+$tooltips: true;
+
+//-- Cargar desplegables
+$desplegables: true;
+
+//-- Cargar tabs
+$tabs: true;
+
+//-- Cargar lightboxs
+$lightboxs: true;
+
+//-- Cargar acciones (Acciones de compartir, etc)
+$acciones: true;
+
+//-- Cargar utilidades
+$utilidades: true;
+
+//-- Columnas Flexbox
+$columnas-flexbox: true;
